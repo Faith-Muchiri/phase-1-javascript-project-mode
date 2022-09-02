@@ -60,3 +60,4 @@ function loadJSON(){
         //URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.
     })
 }
+

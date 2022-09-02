@@ -1,22 +1,21 @@
-{
-    "Products":[
+[
         {
             "name":"Dining Chair",
             "category":"chair",
-            "price":"750",
+            "price":"75.00",
             "imgSrc":"https://furniture123.co.uk/Images/BUNCAM00178051_1_Supersize.jpg?v=2"
         },
         {
             "name":"Queen Size bed",
             "category":"bed",
-            "price":"5500",
+            "price":"55.00",
             "imgSrc":"https://www.bassettfurniture.com/_images/catalog/product-images/2611-K153S.JPG?impolicy=natresize&h=2000"
         },
         {
             "name":"Wardrobe",
             "category":"wardrobe",
-            "price":"6500",
-            "imgSrc":"https://media.istockphoto.com/photos/large-wardrobe-with-stylish-womens-clothing-shoes-accessories-and-picture-id1298299033?b=1&k=20&m=1298299033&s=170667a&w=0&h=ncTjKGxcP90_MoLbJzTLLuxLKJhNCahpTYHSUhww5Bg="
+            "price":"165.00",
+         "imgSrc":"https://media.istockphoto.com/photos/large-wardrobe-with-stylish-womens-clothing-shoes-accessories-and-picture-id1298299033?b=1&k=20&m=1298299033&s=170667a&w=0&h=ncTjKGxcP90_MoLbJzTLLuxLKJhNCahpTYHSUhww5Bg="
         },
         {
             "name" : "Armchair",
@@ -141,4 +140,3 @@
     
     ]
     
-}
