@@ -129,3 +129,17 @@ function loadCart(){
     // calculate and update UI of cart info 
     updateCartInfo();
 }
+
+// calculate total price of the cart and other info
+function findCartInfo(){
+    let products = getProductFromStorage();
+    let total = products.reduce((acc, product) => {
+        let price = parseFloat(product.price.substr(1)); // removing dollar sign
+        return acc += price;
+    }, 0); // adding all the prices
+
+    return{
+        total: total.toFixed(2),
+        productCount: products.length
+    }
+}
