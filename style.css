@@ -350,3 +350,35 @@ header .container{
     font-weight: 500;
     opacity: 0.6;
 }
+
+/* footer styles */
+footer{
+    background-color: var(--baltic-sea);
+}
+footer > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us{
+    display: flex;
+    padding: 3rem 0;
+}
+.contact-us a{
+    color: var(--granite-gray);
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.25rem;
+    transition: var(--trans);
+    -webkit-transition: var(--trans);
+    -moz-transition: var(--trans);
+    -ms-transition: var(--trans);
+    -o-transition: var(--trans);
+}
+.contact-us a:hover{
+    color: #fff;
+}
