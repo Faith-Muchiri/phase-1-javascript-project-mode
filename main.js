@@ -28,6 +28,13 @@ function eventListeners(){
     // delete from cart
     cartList.addEventListener('click', deleteProduct);
 }
+// update cart info
+function updateCartInfo(){
+    let cartInfo = findCartInfo();
+    cartCountInfo.textContent = cartInfo.productCount;
+    cartTotalValue.textContent = cartInfo.total;
+}
+
 
 // load product items content form JSON file
 function loadJSON(){
