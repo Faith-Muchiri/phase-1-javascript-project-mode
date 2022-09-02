@@ -7,6 +7,101 @@
     <title>Shopping Cart</title>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href = "index.html" class = "navbar-brand">Luxurious Home</a>
+
+                <div class="cart">
+                    <button type = "button" id = "cart-btn">
+                        <i class = "fas fa-shopping-cart"></i>
+                        <span id = "cart-count-info"></span>
+                      </button>
+
+                      <div class="cart-container">
+                        <div class="cart-list">
+                            <div class = "cart-item">
+                                <img src = "images/armchair.png" alt = "product image">
+                                <div class = "cart-item-info">
+                                  <h3 class = "cart-item-name">Arm Chair</h3>
+                                  <span class = "cart-item-category">Chair</span>
+                                  <span class = "cart-item-price">$120.00</span>
+                                </div>
+              
+                                <button type = "button" class = "cart-item-del-btn">
+                                  <i class = "fas fa-times"></i>
+                                </button>
+                              </div>
+                        </div>
+                        <div class = "cart-total">
+                            <h3>Total: $</h3>
+                            <span id = "cart-total-value"></span>
+                        </div>
+                      </div>
+                </div>
+            </nav>
+
+            <!-- sub-section -->
+            <div class = "banner">
+                <div class = "banner-content">
+                  <h1>Furniture For Your Home</h1>
+                  <p class = "text">For the best luxurious home furniture...</p>
+                  <div class = "btns">
+                    <button type = "button" class = "btn">know more</button>
+                    <button type = "button" class = "btn">more info</button>
+                  </div>
+                </div>
+      
+                <div class = "banner-img">
+                  <img src = "images/banner-img.png" alt = "furniture banner image">
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </header>
+    
+
+    <!-- Ptoducts section -->
+    section class = "products">
+      <div class = "container">
+        <h2>Our Products</h2>
+        <div class = "product-list">
+            <div class = "product-item">
+            <div class = "product-img">
+              <img src = "images/bed.png" alt = "product image">
+              <button type = "button" class = "add-to-cart-btn">
+                <i class = "fas fa-shopping-cart"></i>Add To Cart
+              </button>
+            </div>
+
+            <div class = "product-content">
+              <h3 class = "product-name">Wooden Bed</h3>
+              <span class = "product-category">Bed</span>
+              <p class = "product-price">$120.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="contact-us">
+                <a href = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
