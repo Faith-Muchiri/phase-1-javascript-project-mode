@@ -31,7 +31,7 @@ function eventListeners(){
 
 // load product items content form JSON file
 function loadJSON(){
-    fetch('url')
+    fetch('db.json')
     .then(response => response.json())
     .then(data =>{
         let html = '';
