@@ -60,4 +60,43 @@ function loadJSON(){
         //URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.
     })
 }
+// purchase product
+function purchaseProduct(e){
+    if(e.target.classList.contains('add-to-cart-btn')){
+        let product = e.target.parentElement.parentElement;
+        getProductInfo(product);
+    }
+}
 
+// get product info after add to cart button click
+function getProductInfo(product){
+    let productInfo = {
+        id: cartItemID,
+        imgSrc: product.querySelector('.product-img img').src,
+        name: product.querySelector('.product-name').textContent,
+        category: product.querySelector('.product-category').textContent,
+        price: product.querySelector('.product-price').textContent
+    }
+    cartItemID++;
+    addToCartList(productInfo);
+    saveProductInStorage(productInfo);
+}
+// add the selected product to the cart list
+function addToCartList(product){
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.setAttribute('data-id', `${product.id}`);
+    cartItem.innerHTML = `
+        <img src = "${product.imgSrc}" alt = "product image">
+        <div class = "cart-item-info">
+            <h3 class = "cart-item-name">${product.name}</h3>
+            <span class = "cart-item-category">${product.category}</span>
+            <span class = "cart-item-price">${product.price}</span>
+        </div>
+
+        <button type = "button" class = "cart-item-del-btn">
+            <i class = "fas fa-times"></i>
+        </button>
+    `;
+    cartList.appendChild(cartItem);
+}
