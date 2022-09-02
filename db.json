@@ -6,6 +6,12 @@
             "imgSrc":"https://furniture123.co.uk/Images/BUNCAM00178051_1_Supersize.jpg?v=2"
         },
         {
+            "name":"Office set",
+            "category":"office ",
+            "price":"75.00",
+            "imgSrc":"images/era.jpg"
+        },
+        {
             "name":"Queen Size bed",
             "category":"bed",
             "price":"55.00",
@@ -31,7 +37,7 @@
         },
         {
             "name" : "Bench",
-            "cat   egory" : "Bench",
+            "category" : "Bench",
             "price" : "15.00",
             "imgSrc" : "images/bench.png"
         },
